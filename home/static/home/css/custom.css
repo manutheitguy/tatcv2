@@ -32,6 +32,10 @@
   border-radius: 3px;
 }
 
+.article-txt p {
+  font-size: 1.5rem;
+}
+
 .article-readmore {
   padding-left: 2rem;
   padding-bottom: 2rem;
