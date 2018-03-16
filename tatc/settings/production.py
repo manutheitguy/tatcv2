@@ -29,7 +29,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['tatc.herokuapp.com']
+ALLOWED_HOSTS = ['tatcv2.herokuapp.com']
 
 # Application definition
 
