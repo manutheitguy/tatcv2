@@ -1,7 +1,7 @@
 
 <body class="home preload preLoaderBlock">
 
-<div class="test testHidden "><div class="preloader"><img src="images/sei-loader.png" class="" alt="" /></div></div>
+<div class="test testHidden "><div class="preloader"><img src="{% static 'home/images/sei-loader.png' %}" class="" alt="" /></div></div>
 
 	<div class="defineFloat mobStickyBar">
 		<ul class="list-unstyled">
@@ -10,7 +10,7 @@
 			<li class="sCal"><a data-toggle="modal" data-target="#myModal" title="Online Cost Calculator" href="javascript:void(0);"></a></li>
 		</ul>
 	</div>
-	<p id="back-top" style="display: block;"><a href="#top"><img src="images/toparrow.png" alt="" class="img-responsive" /></a></p>
+	<p id="back-top" style="display: block;"><a href="#top"><img src="{% static 'home/images/toparrow.png' %}" alt="" class="img-responsive" /></a></p>
 
 <section class="defineFloat" id="onlineCostPop">
 <!-- POP UP ONLINE COST -->
@@ -21,12 +21,12 @@
   <div class="modal-dialog uncompeletOuterBox" role="document">
 		<div class="modal-content">
       
-			<button type="button" class="close exitBtn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/exit-arrow.png" class="img-responsive" alt="" /></span></button>
+			<button type="button" class="close exitBtn" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="{% static 'home/images/exit-arrow.png' %}" class="img-responsive" alt="" /></span></button>
 
 			<div class="modal-body">
 				<div class="col-sm-12 col-xs-12 noPad onlineCostLeftOuterOut uncompeletBox">
 					<div class="pupUptext">
-						<h5>We are upgrading our Online Cost Calculator with more features and it shall be back soon. In the meantime, you can <a href="get-a-quote.php">Get a Quote</a> here.</h5>
+						<h5>We are upgrading our Online Cost Calculator with more features and it shall be back soon. In the meantime, you can <a href="get-a-quote.html">Get a Quote</a> here.</h5>
 					</div>
 				</div>
             </div>
@@ -44,7 +44,7 @@
   <div class="modal fade stepFormSection" id="myModal1" tabindex="-1" role="dialog"> 
     <div class="modal-dialog stepformSection" role="document">
       <div class="modal-content closeBtn">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="images/close-btn.png" alt="Close Button" /></span></button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="{% static 'home/images/close-btn.png' %}" alt="Close Button" /></span></button>
         <div class="modal-body">
           <div class="col-sm-12 col-xs-12 text-center onlineForm changeBackground"> 
             <!-- multistep form -->
@@ -162,34 +162,34 @@
   <div class="defineFloat midBar">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 col-sm-3 col-xs-6 logo"> <a href=""><img src="images/logo.png" class="img-responsive" alt="" title="SEO Experts India" /></a> </div>
+        <div class="col-md-3 col-sm-3 col-xs-6 logo"> <a href=""><img src="{% static 'home/images/logo.png' %}" class="img-responsive" alt="" title="SEO Experts India" /></a> </div>
         <div class="col-sm-9 col-md-9 col-xs-12 menu_outer">
           <nav class="navbar navbar-default"> 
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-			<img src="images/mobCalcIcon.png" class="img-responsive" alt="" data-toggle="modal" data-target="#myModal" />
+			<img src="{% static 'home/images/mobCalcIcon.png' %}" class="img-responsive" alt="" data-toggle="modal" data-target="#myModal" />
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav" id="example-one">
                 <li class="active current_page_item"><a href="">Home</a></li>
-                <li class=""><a href="about-us.php" title="About">About</a></li>
-                <li class=" dropmenu "><a href="digital-marketing-services.php" title="">Services</a><span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                <li class=""><a href="about-us.html" title="About">About</a></li>
+                <li class=" dropmenu "><a href="digital-marketing-services.html" title="">Services</a><span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
                   <ul class="dropdown-menu"> 
-                    <li class=""><a href="seo-services.php" title="seo-services">Search Engine Optimization</a></li>
-                    <li class=""><a href="ppc-management-services.php" title="Pay Per Click Management ">PPC  Management </a></li>
-                    <li class=""><a href="online-reputation-management.php" title="Online Reputation Management">Online Reputation Management</a></li>
-                    <li class=" "><a href="link-building-services.php">Link Building</a></li>
-                    <li class=""><a href="social-media-marketing.php" title="Social Media Marketing">Social Media Marketing</a></li>
-                    <li class="submenulist "><a href="content-writing-services.php" title="Content Development">Content Development</a>
+                    <li class=""><a href="seo-services.html" title="seo-services">Search Engine Optimization</a></li>
+                    <li class=""><a href="ppc-management-services.html" title="Pay Per Click Management ">PPC  Management </a></li>
+                    <li class=""><a href="online-reputation-management.html" title="Online Reputation Management">Online Reputation Management</a></li>
+                    <li class=" "><a href="link-building-services.html">Link Building</a></li>
+                    <li class=""><a href="social-media-marketing.html" title="Social Media Marketing">Social Media Marketing</a></li>
+                    <li class="submenulist "><a href="content-writing-services.html" title="Content Development">Content Development</a>
                     </li>  
                   </ul>
                 </li>
-                <li class=""><a href="ranking.php" title="Rankings">Rankings</a></li>
-                <li class=""><a href="seo-packages.php">Packages</a></li>
-								<li class=""><a href="reviews.php" title="Reviews">Reviews</a></li>
-                <li class=""><a href="get-in-touch.php"  title="Contact">Contact</a></li>
+                <li class=""><a href="ranking.html" title="Rankings">Rankings</a></li>
+                <li class=""><a href="seo-packages.html">Packages</a></li>
+								<li class=""><a href="reviews.html" title="Reviews">Reviews</a></li>
+                <li class=""><a href="get-in-touch.html"  title="Contact">Contact</a></li>
                 <li class="lastChild">
                 	<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
 						<rect rx="2" ry="2" class="shape" height="100%" width="100%"/>
@@ -200,8 +200,8 @@
               </ul>
 			  <div class="defineFloat mobPhone">
 				<ul class="list-unstyled">
-					<li><a href="tel:+1-646-808-0229"><img src="images/phonePop.png" class="img-responsive" alt="" />+1 (646)-808-0229</a></li>
-					<li><a href="javascript:void(0);"><img src="images/mailPop.png" class="img-responsive" alt=""><span class="salesEmail"></span></a></li>
+					<li><a href="tel:+1-646-808-0229"><img src="{% static 'home/images/phonePop.png' %}" class="img-responsive" alt="" />+1 (646)-808-0229</a></li>
+					<li><a href="javascript:void(0);"><img src="{% static 'home/images/mailPop.png' %}" class="img-responsive" alt=""><span class="salesEmail"></span></a></li>
 				</ul>
 			  </div>
             </div>
@@ -227,7 +227,7 @@
     
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <div class="item active"> <img src="images/slider.jpg" alt="...">
+      <div class="item active"> <img src="{% static 'home/images/slider.jpg" alt="...">
         <div class="homeBannerExt wow onloadEffect" > <span>High Performance</span>
           <h2>Internet Marketing Solutions</h2>
           <p>We help brands optimize their online performance.</p>
@@ -263,7 +263,7 @@
               <p>With extensive industry experience and customer-centric approach, we ensure your brand, website and marketing campaigns perform exceptionally, every time. We are an experienced team of professionals that stands at the forefront of all emerging trends in digital marketing. Understanding that every business has a different set of challenges and unique requirements, we deliver custom Internet Marketing Solutions that meet their specific needs. Together, we help diverse industry clients to stay ahead of their competition.</p>
             </div>
 			
-            <div class="defineFloat whoLinks"> <a href="about-us.php"  title="Know more about us"><span>Know more about us</span><img src="images/rightArrow.png" alt="" class="img-responsive" /></a> <a href="#company" id="jQueryButtons2" title="What makes us different? "><span>What makes us different?</span> <img src="images/rightArrow.png" alt="" class="img-responsive" /></a></div>
+            <div class="defineFloat whoLinks"> <a href="about-us.html"  title="Know more about us"><span>Know more about us</span><img src="{% static 'home/images/rightArrow.png' %}" alt="" class="img-responsive" /></a> <a href="#company" id="jQueryButtons2" title="What makes us different? "><span>What makes us different?</span> <img src="{% static 'home/images/rightArrow.png' %}" alt="" class="img-responsive" /></a></div>
           </div>
         </div>
       </div>
@@ -301,55 +301,55 @@
     </div>
     <div class="container-fluid wrap-container">
       <div class="col-md-12 col-sm-12 col-xs-12 marketingKHM">
-        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center wow fadeIn"> <a href="seo-services.php">
+        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center wow fadeIn"> <a href="seo-services.html">
           <div class="defineFloat">
             <div class="col-sm-12 col-xs-12 text-center">
-              <div class="autoHover m1"><!--<img src="images/m1.png" class="img-responsive" alt="" />--></div>
+              <div class="autoHover m1"><!--<img src="{% static 'home/images/m1.png' %}" class="img-responsive" alt="" />--></div>
             </div>
             <h2>Search Engine<span>Optimization</span></h2>
             <p>Drive greater traffic to your website through organic search listings. Bring your website to the top of search engine result pages with our proven SEO strategies.</p>
           </div>
           </a> </div>
-        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center wow fadeIn"> <a href="ppc-management-services.php">
+        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center wow fadeIn"> <a href="ppc-management-services.html">
           <div class="defineFloat">
             <div class="col-sm-12 col-xs-12 text-center">
-              <div class="autoHover m2"><!--<img src="images/m2.png" class="img-responsive" alt="" />--></div>
+              <div class="autoHover m2"><!--<img src="{% static 'home/images/m2.png' %}" class="img-responsive" alt="" />--></div>
             </div>
             <h2>PAy per click<span>MANAGEMENT</span></h2>
             <p>Reduce ad costs and increase conversions with our fully managed PPC campaigns. Drive optimized and targeted traffic to your site with PPC advertising.</p>
           </div>
           </a> </div>
-        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center wow fadeIn" > <a href="online-reputation-management.php">
+        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center wow fadeIn" > <a href="online-reputation-management.html">
           <div class="defineFloat">
             <div class="col-sm-12 col-xs-12 text-center">
-              <div class="autoHover m3"><!--<img src="images/m3.png" class="img-responsive" alt="" />--></div>
+              <div class="autoHover m3"><!--<img src="{% static 'home/images/m3.png' %}" class="img-responsive" alt="" />--></div>
             </div>
             <h2>Online reputation<span>management</span></h2>
             <p>Establish your brand’s reputation as an industry leader. We suppress negative results about your company and prevent future ones from appearing.</p>
           </div>
           </a> </div>
-        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center borderBottom wow fadeIn" > <a href="link-building-services.php">
+        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center borderBottom wow fadeIn" > <a href="link-building-services.html">
           <div class="defineFloat">
             <div class="col-sm-12 col-xs-12 text-center">
-              <div class="autoHover m4"><!--<img src="images/m4.png" class="img-responsive" alt="" />--></div>
+              <div class="autoHover m4"><!--<img src="{% static 'home/images/m4.png' %}" class="img-responsive" alt="" />--></div>
             </div>
             <h2>link<span>Building</span></h2>
             <p>Promoting contextual, high quality links that drive traffic and improve rankings. We help your brand be recognized as an authority in your industry.</p>
           </div>
           </a> </div>
-        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center borderBottom wow fadeIn" > <a href="social-media-marketing.php">
+        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center borderBottom wow fadeIn" > <a href="social-media-marketing.html">
           <div class="defineFloat">
             <div class="col-sm-12 col-xs-12 text-center">
-              <div class="autoHover m5"><!--<img src="images/m5.png" class="img-responsive" alt="" />--></div>
+              <div class="autoHover m5"><!--<img src="{% static 'home/images/m5.png' %}" class="img-responsive" alt="" />--></div>
             </div>
             <h2>SociAL Media<span>mARKETING</span></h2>
             <p>Engage with your current customers and reach new prospects with social media marketing. We help you build better relationships with your audience.</p>
           </div>
           </a> </div>
-        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center borderBottom wow fadeIn" > <a href="content-writing-services.php">
+        <div class="col-md-4 col-sm-4 col-xs-6 khmInner text-center borderBottom wow fadeIn" > <a href="content-writing-services.html">
           <div class="defineFloat">
             <div class="col-sm-12 col-xs-12 text-center">
-              <div class="autoHover m6"><!--<img src="images/m6.png" class="img-responsive" alt="" />--></div>
+              <div class="autoHover m6"><!--<img src="{% static 'home/images/m6.png' %}" class="img-responsive" alt="" />--></div>
             </div>
             <div class="lastHover">
               <h2>content<span>DEVELOPMENT</span></h2>
@@ -365,12 +365,12 @@
 	
 	
       <div class="row wow fadeInUp" >
-        <div class="col-sm-12 col-xs-12 text-center bounce"> <a href="javascript:void(0)"><img src="images/belowArrow.png" class="img-responsive" alt="" /></a> </div>
+        <div class="col-sm-12 col-xs-12 text-center bounce"> <a href="javascript:void(0)"><img src="{% static 'home/images/belowArrow.png' %}" class="img-responsive" alt="" /></a> </div>
         <div class="col-md-12 col-sm-12 col-xs-12 moreSales text-center">
           <h2>Want more Sales?</h2>
-          <p>Get your <a href="request-for-proposal.php">FREE Proposal</a> on how we can help you with that!</p>
-          <div class="defineFloat divideImage text-center wow zoomIn"> <img src="images/divideImage.png" class="img-responsive" alt="" /> </div>
-          <a href="get-started.php" class="btn btn-primary blueButton hvr-grow" id="getstartbtn">Get started Now!</a> <span><a href="javascript:void(0);">Call us on +1 (646) 808 0229</a></span></div>
+          <p>Get your <a href="request-for-proposal.html">FREE Proposal</a> on how we can help you with that!</p>
+          <div class="defineFloat divideImage text-center wow zoomIn"> <img src="{% static 'home/images/divideImage.png' %}" class="img-responsive" alt="" /> </div>
+          <a href="get-started.html" class="btn btn-primary blueButton hvr-grow" id="getstartbtn">Get started Now!</a> <span><a href="javascript:void(0);">Call us on +1 (646) 808 0229</a></span></div>
       </div>
     </div>
   </section>
@@ -403,14 +403,14 @@
         <div class="col-sm-4 col-xs-12 col-md-4 companyKhm blue text-center"> 
           <div class="cKhm col-sm-12 col-xs-6 noPad wow fadeIn">
             <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="1">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="images/seven.png" class="img-responsive" alt="" /></div>
+              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="{% static 'home/images/seven.png' %}" class="img-responsive" alt="" /></div>
               <h3>More than 7 Years <span>of Experience</span><i class="fa fa-plus" aria-hidden="true"></i></h3>
               <p id="i_1">We have acquired unmatched technical expertise and developed proven methodologies for delivering projects of any size and complexity.</p>
             </div>
           </div>
           <div class="cKhm col-sm-12 col-xs-6 noPad wow fadeIn">
             <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="2">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="images/nineEight.png" class="img-responsive" alt="" /></div>
+              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="{% static 'home/images/nineEight.png' %}" class="img-responsive" alt="" /></div>
               <h3>98% Customer <span>Satisfaction</span><i class="fa fa-plus" aria-hidden="true"></i></h3>
               <p id="i_2">We have delivered over 800 successful projects to 350+ clients. We feel proud when they keep coming back to us for more services.</p>
             </div>
@@ -419,14 +419,14 @@
         <div class="col-sm-4 col-xs-12 col-md-4 companyKhm orange text-center">
           <div class="cKhm col-sm-12 col-xs-6 noPad wow fadeIn">
             <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="3">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="images/team.png" class="img-responsive" alt="" /></div>
+              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="{% static 'home/images/team.png' %}" class="img-responsive" alt="" /></div>
               <h3>Skilled Team<span> We know what Google wants!</span><i class="fa fa-plus" aria-hidden="true"></i></h3>
               <p id="i_3">We have a team of 150+ highly trained and experienced professionals that is well-versed with the SEO Tactics required for high rankings.</p>
             </div>
           </div>
           <div class="cKhm col-sm-12 col-xs-6 noPad wow fadeIn">
             <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="4">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="images/tick-new.png" class="img-responsive" alt="" /></div>
+              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="{% static 'home/images/tick-new.png' %}" class="img-responsive" alt="" /></div>
               <h3>Proven Results<i class="fa fa-plus" aria-hidden="true"></i></h3>
               <p id="i_4">With our customer-centric approach and proven methodologies, we have helped hundreds of businesses optimize their online performance.</p>
             </div>
@@ -435,14 +435,14 @@
         <div class="col-sm-4 col-xs-12 col-md-4 companyKhm silver text-center">
           <div class="cKhm col-sm-12 col-xs-6 noPad wow fadeIn">
             <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="5">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="images/share.png" class="img-responsive" alt="" /></div>
+              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="{% static 'home/images/share.png' %}" class="img-responsive" alt="" /></div>
               <h3>Performance<span> Tracking</span><i class="fa fa-plus" aria-hidden="true"></i></h3>
               <p id="i_5"> Through our regular updates and monthly reports, our clients can easily monitor the progress of their campaigns and seek changes if required.</p>
             </div>
           </div>
           <div class="cKhm col-sm-12 col-xs-6 noPad wow fadeIn">
             <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="6">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="images/dollarStar.png" class="img-responsive" alt="" /></div>
+              <div class="col-sm-12 col-xs-12 KHM-2-mobImage"><img src="{% static 'home/images/dollarStar.png' %}" class="img-responsive" alt="" /></div>
               <h3>Competitive <span>Pricing</span><i class="fa fa-plus" aria-hidden="true"></i></h3>
               <p id="i_6"> We aim at delivering maximum value to our customers from their investments with our flexible engagement model.</p>
             </div>
@@ -451,7 +451,7 @@
       </div>
       <div class="row wow fadeInUp" >
         <div class="col-sm-12 col-xs-12">
-          <div class="defineFloat divideImage text-center wow zoomIn"> <img src="images/divideImage4.png" class="img-responsive" alt="" /> </div>
+          <div class="defineFloat divideImage text-center wow zoomIn"> <img src="{% static 'home/images/divideImage4.png' %}" class="img-responsive" alt="" /> </div>
         </div>
         <div class="col-md-12 col-sm-12 col-xs-12 achieved text-center">
           <h2>What <span>we've achieved</span> in the last <span>5 Years</span></h2>
@@ -490,7 +490,7 @@
             <h2>Supercharge Your SEO Campaign Today!</h2>
             <p>Get Free Consultation from our Internet Marketing Experts!</p>
           </div>          
-          <button onclick="return lh_inst.lh_openchatWindow()" class="btn btn-primary yellowButton hvr-grow" type="button">CHAT Live NOW! <span><img src="images/chat-box.png" class="img-responsive" alt="" /></span></button>
+          <button onclick="return lh_inst.lh_openchatWindow()" class="btn btn-primary yellowButton hvr-grow" type="button">CHAT Live NOW! <span><img src="{% static 'home/images/chat-box.png' %}" class="img-responsive" alt="" /></span></button>
          </div>
       </div>
     </div>
@@ -508,19 +508,19 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <div class="col-sm-12 col-xs-12 noPad rcImage"> <img src="images/rank1.png" class="img-responsive" alt=""> </div>
+                <div class="col-sm-12 col-xs-12 noPad rcImage"> <img src="{% static 'home/images/rank1.png' %}" class="img-responsive" alt=""> </div>
               </div>
               <div class="item">
-                <div class="col-sm-12 col-xs-12 noPad rcImage"> <img src="images/rank2.png" class="img-responsive" alt=""> </div>
+                <div class="col-sm-12 col-xs-12 noPad rcImage"> <img src="{% static 'home/images/rank2.png' %}" class="img-responsive" alt=""> </div>
               </div>
               <div class="item">
-                <div class="col-sm-12 col-xs-12 noPad rcImage"> <img src="images/rank3.png" class="img-responsive" alt=""> </div>
+                <div class="col-sm-12 col-xs-12 noPad rcImage"> <img src="{% static 'home/images/rank3.png' %}" class="img-responsive" alt=""> </div>
               </div>
 			  <div class="item">
-                <div class="col-sm-12 col-xs-12 noPad rcImage"> <img src="images/rank4.png" class="img-responsive" alt=""> </div>
+                <div class="col-sm-12 col-xs-12 noPad rcImage"> <img src="{% static 'home/images/rank4.png' %}" class="img-responsive" alt=""> </div>
               </div>
 			  <div class="item">
-                <div class="col-sm-12 col-xs-12 noPad rcImage"> <img src="images/rank5.png" class="img-responsive" alt=""> </div>
+                <div class="col-sm-12 col-xs-12 noPad rcImage"> <img src="{% static 'home/images/rank5.png' %}" class="img-responsive" alt=""> </div>
               </div>
             </div>
             </div>

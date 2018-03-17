@@ -14,7 +14,7 @@
 		<ul class="list-unstyled">
 			<li class="sPhone"><a href="tel:+254 (0)20 2004959"></a></li>
 			<li class="sMail"><span class="salesEmail"><a href="mailto:info@tatc.co.ke"><i class="fa fa-envelope" aria-hidden="true"></i>info@tatc.co.ke</a></span></li>
-			<li class="sCal"><a data-toggle="modal" data-target="#myModal" title="" href="javascript:void(0);" data-original-title="Online Cost Calculator"></a></li>
+			<li class="sCal"><a data-toggle="modal" data-target="#myModal" title="" href="{% url 'index' %}" data-original-title="Online Cost Calculator"></a></li>
 		</ul>
 	</div>
 	<p id="back-top" style="display: none;"><a href="#top"><img src="{% static 'home/images/toparrow.png' %}" alt="" class="img-responsive"></a></p>
@@ -117,7 +117,7 @@
                         <div class="popupField">
                           <select class="validate[required]" id="servicesweb" name="servicesweb">
                             <option value=" " selected="selected">Select Services</option>                            
-                            <option value="Search Engine Optimization">Search Engine Optimization</option>
+                            <option value="Premium Kenyan Tea">Premium Kenyan Tea</option>
                             <option value="Pay Per Click Management">Pay Per Click Management</option>
                             <option value="Online Reputation Management">Online Reputation Management</option>
                             <option value="Link Building">Link Building</option>
@@ -168,12 +168,12 @@
   <div class="defineFloat topBar">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12 renoPad">
+        <!-- <div class="col-md-12 col-sm-12 col-xs-12 renoPad">
           <ul class="list-unstyled">
-            <li><span>Have a question? Contact Us.</span><a href="javascript:void(0);"><i class="fa fa-phone" aria-hidden="true"></i> +254 (0)20 2004959</a></li>
+            <li><span>Have a question? Contact Us.</span><a href="{% url 'index' %}"><i class="fa fa-phone" aria-hidden="true"></i> +254 (0)20 2004959</a></li>
             <li><span class="salesEmail"><a href="mailto:info@tatc.co.ke"><i class="fa fa-envelope" aria-hidden="true"></i>info@tatc.co.ke</a></span></li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
 </div>
@@ -191,132 +191,143 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav" id="example-one">
-                <li class="active current_page_item"><a href="{% url 'index' %}" style="">Home</a></li>
-                <li class="menuOneTT aboutTip"><a href="{% url 'about' %}" title="" data-original-title="About">About</a>
-				<span class="toolTipxt" style="padding: 8px 10px 8px 5px; width:332px;">Read more about our company and find out why are different from other SEO firms &amp; agencies in India.</span> 
-				</li>
+                <li class="active current_page_item">
+                  <a href="{% url 'index' %}" style="">Home</a>
+                </li>
                 
-                <li class=" dropmenu "><a href="{% url 'exports' %}" title="" data-original-title="">Exports</a><span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-                  <ul class="dropdown-menu"> 
-                    <li class="subMenuTT"><a href="#seo-services.html" title="" data-original-title="seo-services">Search Engine Optimization</a>
-					<span class="toolTipxt" style="width:270px;">Rank at the top of Organic Search Results (SERPs) and dominate your competition.</span>
-					</li>
-                    <li class="subMenuTT"><a href="#ppc-management-services.html" title="" data-original-title="Pay Per Click Management ">PPC Management Services</a>
-					<span class="toolTipxt">Be found, where your customers are searching, through Google Adwords and Bing/Yahoo pay-per-click ads.</span>
-					</li>
-					<li class=" subMenuTT"><a href="{% url 'index' %}">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
- relevant &amp; high authority backlinks for your off-page campaigns. 
-Sign up for our backlinking program today OR purchase links à la carte. </span></li>
-                    <li class="subMenuTT"><a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
-					<span class="toolTipxt" style="width:300px;">Not only we can help you clean your online reputation, but also we can effectively build your positive reputation online. <a href="#online-reputation-management.html" title="" data-original-title="">Learn More &gt;&gt;</a></span>
-					</li>                    
-                    <li class="subMenuTT"><a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Social Media Marketing (SMM)</a><span class="toolTipxt" style="width:365px;">Beat
- the competition on all of LinkedIn, Facebook, Twitter and YouTube with 
-our professional &amp; affordable Social Media Optimization &amp; 
-Advertising services.</span>
-					</li>
-                    <li class="submenulist subMenuTT"><a href="#content-writing-services.html" title="" data-original-title="Content Development">Content Development Services</a>
-					<span class="toolTipxt" style="width:395px;">Get professional &amp; creative copy written by our team of writers, that is engaging, well optimised and seo friendly.</span>
-                    </li>  
+                <li class="menuOneTT aboutTip">
+                  <a href="{% url 'about' %}" title="" data-original-title="About">About</a>
+                </li>
+                
+                <li class=" dropmenu ">
+                  <a href="{% url 'exports' %}" title="" data-original-title="">Exports</a>
+                  <span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                  </span>
+                  <ul class="dropdown-menu">
+                    <li class="subMenuTT">
+                      <a href="{% url 'index' %}" title="" data-original-title="seo-services">Premium Kenyan Tea</a>
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'index' %}" title="" data-original-title="Pay Per Click Management ">Quality Kenyan Coffee</a>
+                    </li>
+                    <li class=" subMenuTT">
+                      <a href="{% url 'index' %}">Meat &amp; Meat Products</a>
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Fresh Pineapples</a>
+                
+                    </li>
+                    <li class="subMenuTT">
+                      <a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Livestock</a>
+                    </li>
                   </ul>
                 </li>
 
-                <li class=" dropmenu "><a href="{% url 'imports' %}" title="" data-original-title="">Imports</a><span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-                  <ul class="dropdown-menu"> 
-                    <li class="subMenuTT"><a href="#seo-services.html" title="" data-original-title="seo-services">Search Engine Optimization</a>
-					<span class="toolTipxt" style="width:270px;">Rank at the top of Organic Search Results (SERPs) and dominate your competition.</span>
-					</li>
-                    <li class="subMenuTT"><a href="#ppc-management-services.html" title="" data-original-title="Pay Per Click Management ">PPC Management Services</a>
-					<span class="toolTipxt">Be found, where your customers are searching, through Google Adwords and Bing/Yahoo pay-per-click ads.</span>
-					</li>
-					<li class=" subMenuTT"><a href="{% url 'index' %}">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
- relevant &amp; high authority backlinks for your off-page campaigns. 
-Sign up for our backlinking program today OR purchase links à la carte. </span></li>
-                    <li class="subMenuTT"><a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
-					<span class="toolTipxt" style="width:300px;">Not only we can help you clean your online reputation, but also we can effectively build your positive reputation online. <a href="#online-reputation-management.html" title="" data-original-title="">Learn More &gt;&gt;</a></span>
-					</li>                    
-                    <li class="subMenuTT"><a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Social Media Marketing (SMM)</a><span class="toolTipxt" style="width:365px;">Beat
- the competition on all of LinkedIn, Facebook, Twitter and YouTube with 
-our professional &amp; affordable Social Media Optimization &amp; 
-Advertising services.</span>
-					</li>
-                    <li class="submenulist subMenuTT"><a href="#content-writing-services.html" title="" data-original-title="Content Development">Content Development Services</a>
-					<span class="toolTipxt" style="width:395px;">Get professional &amp; creative copy written by our team of writers, that is engaging, well optimised and seo friendly.</span>
-                    </li>  
-                  </ul>
-                </li>
+              <li class=" dropmenu ">
+                <a href="{% url 'exports' %}" title="" data-original-title="">Imports</a>
+                <span>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </span>
+                <ul class="dropdown-menu">
+                  <li class="subMenuTT">
+                    <a href="{% url 'index' %}" title="" data-original-title="seo-services">Office Equipment</a>
+                  </li>
+                  <li class="subMenuTT">
+                    <a href="{% url 'index' %}" title="" data-original-title="Pay Per Click Management ">Equipment &amp; Machinery</a>
+                  </li>
+                  <li class=" subMenuTT">
+                    <a href="{% url 'index' %}">Pharmacetecal Products</a>
+                  </li>
+                  <li class="subMenuTT">
+                    <a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Construction Materials</a>
+              
+                  </li>
+                  <li class="subMenuTT">
+                    <a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Sugar</a>
+                  </li>
+                </ul>
+              </li>
 
+              <li class=" dropmenu ">
+                <a href="{% url 'exports' %}" title="" data-original-title="">Logistics</a>
+                <span>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </span>
+                <ul class="dropdown-menu">
+                  <li class="subMenuTT">
+                    <a href="{% url 'index' %}" title="" data-original-title="seo-services">Locations</a>
+                  </li>
+                  <li class="subMenuTT">
+                    <a href="{% url 'index' %}" title="" data-original-title="Pay Per Click Management ">Wharehousing </a>
+                  </li>
+                  <li class=" subMenuTT">
+                    <a href="{% url 'index' %}">Freight Management</a>
+                  </li>
+                  <li class="subMenuTT">
+                    <a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Courier Shipping</a>
+              
+                  </li>
+                </ul>
+              </li>
 
-                <li class=" dropmenu "><a href="{% url 'logistics' %}" title="" data-original-title="">logistics</a><span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-                  <ul class="dropdown-menu"> 
-                    <li class="subMenuTT"><a href="#seo-services.html" title="" data-original-title="seo-services">Search Engine Optimization</a>
-					<span class="toolTipxt" style="width:270px;">Rank at the top of Organic Search Results (SERPs) and dominate your competition.</span>
-					</li>
-                    <li class="subMenuTT"><a href="#ppc-management-services.html" title="" data-original-title="Pay Per Click Management ">PPC Management Services</a>
-					<span class="toolTipxt">Be found, where your customers are searching, through Google Adwords and Bing/Yahoo pay-per-click ads.</span>
-					</li>
-					<li class=" subMenuTT"><a href="{% url 'index' %}">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
- relevant &amp; high authority backlinks for your off-page campaigns. 
-Sign up for our backlinking program today OR purchase links à la carte. </span></li>
-                    <li class="subMenuTT"><a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
-					<span class="toolTipxt" style="width:300px;">Not only we can help you clean your online reputation, but also we can effectively build your positive reputation online. <a href="#online-reputation-management.html" title="" data-original-title="">Learn More &gt;&gt;</a></span>
-					</li>                    
-                    <li class="subMenuTT"><a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Social Media Marketing (SMM)</a><span class="toolTipxt" style="width:365px;">Beat
- the competition on all of LinkedIn, Facebook, Twitter and YouTube with 
-our professional &amp; affordable Social Media Optimization &amp; 
-Advertising services.</span>
-					</li>
-                    <li class="submenulist subMenuTT"><a href="#content-writing-services.html" title="" data-original-title="Content Development">Content Development Services</a>
-					<span class="toolTipxt" style="width:395px;">Get professional &amp; creative copy written by our team of writers, that is engaging, well optimised and seo friendly.</span>
-                    </li>  
-                  </ul>
-                </li>
-
-                <li class=" dropmenu "><a href="{% url 'solutions' %}" title="" data-original-title="">IT Solutions</a><span><i class="fa fa-caret-down" aria-hidden="true"></i></span>
-                  <ul class="dropdown-menu"> 
-                    <li class="subMenuTT"><a href="#seo-services.html" title="" data-original-title="seo-services">Search Engine Optimization</a>
-					<span class="toolTipxt" style="width:270px;">Rank at the top of Organic Search Results (SERPs) and dominate your competition.</span>
-					</li>
-                    <li class="subMenuTT"><a href="#ppc-management-services.html" title="" data-original-title="Pay Per Click Management ">PPC Management Services</a>
-					<span class="toolTipxt">Be found, where your customers are searching, through Google Adwords and Bing/Yahoo pay-per-click ads.</span>
-					</li>
-					<li class=" subMenuTT"><a href="{% url 'index' %}">Link Building Solutions</a> <span class="toolTipxt" style="width:310px;">Get
- relevant &amp; high authority backlinks for your off-page campaigns. 
-Sign up for our backlinking program today OR purchase links à la carte. </span></li>
-                    <li class="subMenuTT"><a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Online Reputation Management (ORM)</a>
-					<span class="toolTipxt" style="width:300px;">Not only we can help you clean your online reputation, but also we can effectively build your positive reputation online. <a href="#online-reputation-management.html" title="" data-original-title="">Learn More &gt;&gt;</a></span>
-					</li>                    
-                    <li class="subMenuTT"><a href="#social-media-marketing.html" title="" data-original-title="Social Media Marketing">Social Media Marketing (SMM)</a><span class="toolTipxt" style="width:365px;">Beat
- the competition on all of LinkedIn, Facebook, Twitter and YouTube with 
-our professional &amp; affordable Social Media Optimization &amp; 
-Advertising services.</span>
-					</li>
-                    <li class="submenulist subMenuTT"><a href="#content-writing-services.html" title="" data-original-title="Content Development">Content Development Services</a>
-					<span class="toolTipxt" style="width:395px;">Get professional &amp; creative copy written by our team of writers, that is engaging, well optimised and seo friendly.</span>
-                    </li>  
-                  </ul>
-                </li>
+              <li class=" dropmenu ">
+                <a href="{% url 'exports' %}" title="" data-original-title="">IT Solutions</a>
+                <span>
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </span>
+                <ul class="dropdown-menu">
+                  <li class="subMenuTT">
+                    <a href="{% url 'index' %}" title="" data-original-title="seo-services">Software Development</a>
+                  </li>
+                  <li class="subMenuTT">
+                    <a href="{% url 'index' %}" title="" data-original-title="Pay Per Click Management ">Server Configuration</a>
+                  </li>
+                  <li class=" subMenuTT">
+                    <a href="{% url 'index' %}">Web Hosting</a>
+                  </li>
+                  <li class="subMenuTT">
+                    <a href="{% url 'index' %}" title="" data-original-title="Online Reputation Management">Internet Marketing</a>
+              
+                  </li>
+                  <li class="subMenuTT">
+                    <a href="{% url 'index' %}" title="" data-original-title="Social Media Marketing">Network Setup</a>
+                  </li>
+                </ul>
+              </li>
                 
                 <li class="lastChild onlineButtonTT finished">
-                	<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-						<rect rx="2" ry="2" class="shape" height="100%" width="100%"></rect>
-					  </svg>
-                	<a href="{% url 'contact' %}" title="" data-original-title="Online Cost Calculator" style=""><span>For Enquires</span><br>
-                  Contact Us</a>
-				  <span class="toolTipxt" style="width:385px;">Our online cost calculator is the quickest way to get a rough idea of pricing for your Online Marketing Campaigns.</span>
-               </li>
-              <li id="magic-line" style="width: 25.442px; left: 0.799992px; display: none; overflow: hidden;"></li></ul>
-			  <div class="defineFloat mobPhone">
-				<ul class="list-unstyled">
-					<li><a href="tel:+254 (0)20 2004959"><img src="{% static 'home/images/phonePop.png' %}" class="img-responsive" alt="">+254 (0)20 2004959</a></li>
-					<li><a href="javascript:void(0);"><img src="{% static 'home/images/mailPop.png' %}" class="img-responsive" alt=""><span class="salesEmail"><a href="mailto:info@tatc.co.ke"><i class="fa fa-envelope" aria-hidden="true"></i>info@tatc.co.ke</a></span></a></li>
-				</ul>
-			  </div>
-            </div>
-            <!-- /.navbar-collapse --> 
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+                    <rect rx="2" ry="2" class="shape" height="100%" width="100%"></rect>
+                  </svg>
+                  <a href="{% url 'contact' %}" title="" data-original-title="Online Cost Calculator" style="">
+                    <span>For Enquires</span>
+                    <br> Contact Us</a>
+                </li>
+                <li id="magic-line" style="width: 25.442px; left: 0.799992px; display: none; overflow: hidden;"></li>
+                </ul>
+                <div class="defineFloat mobPhone">
+                  <ul class="list-unstyled">
+                    <li>
+                      <a href="tel:+254 (0)20 2004959">
+                        <img src="{% static 'home/images/phonePop.png' %}" class="img-responsive" alt="">+254 (0)20 2004959</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'index' %}">
+                        <img src="{% static 'home/images/mailPop.png' %}" class="img-responsive" alt="">
+                        <span class="salesEmail">
+                          <a href="mailto:info@tatc.co.ke">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>info@tatc.co.ke</a>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+                <!-- /.navbar-collapse -->
+                </nav>
+                </div>
+                </div>
+                </div>
+                </div>
+                </header>
