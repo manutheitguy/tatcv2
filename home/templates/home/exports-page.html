@@ -1,405 +1,475 @@
- {% extends 'home/base.html' %} {% load static %}
+{% extends 'home/base.html' %} 
+{% load static %}
+<body class="reviews">
+{% block nav %}{% include 'home/nav-section.html' %}{% endblock nav %} 
+{% block exports %}
 
-<body class="linkBuilding">
-  {% block nav %}{% include 'home/nav-section.html' %}{% endblock nav %} {% block exports %}
+<section id="sliderInner" class="defineFloat commonSlider reviewPageSlide">
 
+  <img src="{% static 'home/images/reviewslider.jpg' %}" class="img-responsive" alt="">
+  <div class="tHeading reviewBannerExt servicesButton">
+    <h2>What People Say about SEO Experts India</h2>
+    <p>Our valuable customers have shared their gratitude through their reviews</p>
+  </div>
+</section>
 
-  <section id="sliderInner" class="defineFloat commonHeight smBanner linkBuilding">
-    <img src="{% static 'home/images/linkBg.png' %}" class="img-responsive" alt="" />
-    <div class="slideContent servicesButton">
-      <h2>LINK BUILDING = HIGHER RANKINGS</h2>
-      <p>We Build High Quality Backlinks That Get Results!</p>
-      <!--<button class="btn btn-default">Grab Your FREE Brand Audit Report</button>-->
-    </div>
-  </section>
-  <section class="defineFloat" id="online">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-xs-12 ormReputation">
-          <h1>SEO Link Building Services India, Link Building Outsourcing, Link Building Outsource, Link Building Services</h1>
+<section class="defineFloat" id="reviews">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-xs-12 text-center tContent wow fadeIn">
+        <h3 class="hide">Hide title</h3>
+        <p>We have a myriad of clients spread all over the globe, and we have been serving them for several years now. With
+          ever changing industry, the algorithms and the competition have changed drastically. But, we at
+          <span class="themeColor">SEO Experts India</span>, has always believed in maintaining our service as well as project management standards
+          to the optimum. </p>
+        <p>We are committed to
+          <span class="themeColor">offering top-notch SEO services</span>, while delivering complete customer satisfaction with great customer retention
+          rate.We pride ourselves to announce that we have received tremendous support, and our
+          <span class="themeColor">valuable customers</span> have shared their gratitude through their reviews for our exceptional services. </p>
+        <div class="getHeading reviewDividerline">
+          <hr>
         </div>
+
       </div>
-    </div>
-  </section>
-  <section class="defineFloat" id="lbMessage">
-    <div class="container">
-      <div class="row wow fadeIn">
-        <div class="col-sm-12 col-xs-12 text-center lbmOuter linkBuildaddHeading">
-          <h4>" There was a brief time in SEO history where you could build thousands of spam links and watch your site climb
-            to the top of the first page. Those days are long gone. SEOs that do well today dedicate serious resources (time,
-            money, and skilled labor) towards their link building campaigns."</h4>
-          <span>Brian Dean, Author of Backlinko</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="defineFloat" id="lbDead">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-xs-12 text-center lbdHeading wow fadeIn">
-          <span>No matter what you may have heard,</span>
-          <h2>Link Building is not Dead!</h2>
-        </div>
-        <div class="col-sm-12 col-xs-12 noPad lbdContent">
-          <div class="col-sm-8 col-md-7 col-md-offset-1 col-xs-12 lbdLeft wow fadeIn">
-            <p>Infact, backlinks are the biggest and most important ranking signal that Google and other search engines use
-              to determine your relevance and authority on the web. Earning contextually relevant backlinks through high-quality
-              content and diversified strategy still signifies a ‘valuable endorsement’ for higher search rankings. So, auditing
-              and fine-tuning your link building approach is crucial to improve search visibility, organic traffic, and brand
-              awareness for your business.</p>
+      <div class="col-sm-12 col-xs-12 tOuter">
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>"The major factors that lead me straight into the path of SEOExperts India were their own Google ranking and
+              the competitive price they were offering. To top it off , their process was very good and efficient with prompt
+              service and I’m getting good rankings in Google for my site. The team is very professional and have an excellent
+              skillset. Overall, the quality of service and the cost was very good and if I were to recommend their service
+              to anyone, I would describe them to expect excellent service. “</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />151 Fisherton Street, Salisbury- SP1 3ES, UK</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="" />+44 7779578582</span>
           </div>
-          <div class="col-sm-3 col-xs-12 lbdRight yellowLineAmination">
-            <label>Need Help? Want to talk to an Link Expert?
-              <a href="javascript:void(0);" onClick="return lh_inst.lh_openchatWindow()">Chat LIVE Now! </a>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="BEF" class="defineFloat">
-    <div class="defineFloat BEF">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12 businessInner text-center wow fadeIn">
-            <h2>LET'S SEE HOW YOUR BACKLINK PROFILE STACKS UP?</h2>
-            <p>Get a Detailed Assessment of your Social Media Profiles along with Custom Strategies on how to take them to the
-              next level. </p>
-          </div>
-          <div class="defineFloat divide text-center wow fadeIn">
+          <div class="defineFloat text-center rightTest rightBlue">
+            <div class="rightImage">
+              <img src="{% static 'home/images/test1.png' %}" class="img-responsive" alt="" />
+            </div>
             <hr>
+            <label>Neeraj Parson</label>
+            <span>Fisherton Dental Care</span>
           </div>
-
-          <div class="defineFloat text-center businessButton wow zoomIn">
-            <button id="popUpFormThree" type="button" class="btn btn-primary yellowButton hvr-grow popUpFormThree cuArrow">Request a FREE Link Audit
-              <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            </button>
-          </div>
-
         </div>
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>"I have been reviewing the SEO reports sent to me recently for my business website.I want to tell you that you
+              brought the new website to the first page within just 7 weeks. Before we hired your company, the website was
+              just started and we were sometimes on page three but not any closer to page one. Now we are on page one for
+              several of our keywords. WE are receiving more calls and interest in the service we provide.I recall having
+              a technical issue with the way I built the website. I brought this to your attention and almost immediately
+              a technician from your development team contacted me and suggested a way to correction the problem. Thank you
+              for the professional and prompt service you and your company provides. Certainly your team of experts provide
+              a cost effective process for web services and SEO. My thanks to you and your team" </p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />7050 Winkler Road Suite 119, Fort Myers, 33919, United States</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="" />+1 239-565-4025, +1 239 209 3609</span>
+            <span>
+              <img src="{% static 'home/images/testFb.png' %}" class="img-responsive" alt="" />connect with Frank via
+              <a class="fbLink" href="https://www.facebook.com/fortmyersphotographer" target="_blank">facebook</a>
+            </span>
+          </div>
+          <div class="defineFloat text-center rightTest rightGrey">
+            <div class="rightImage">
+              <img src="{% static 'home/images/test2.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Frank Simonetti</label>
+            <span>Fort Myers Photography</span>
+          </div>
+        </div>
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>"I have been very satisfied with the service and quality of work of SEOExperts. They provided a very high standard
+              of work for a very competitive price. Everything was explained and there were no hidden costs. They were also
+              very easy to communicate with. I would definitely recommend them to anyone seeking a high quality and very
+              reasonably priced service."</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />Perth, Western Australia, Australia</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="" />+61 415676909</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightGreen">
+            <div class="rightImage">
+              <img src="{% static 'home/images/test3.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Moira Williamson</label>
+            <span>Truly Medical Getaways</span>
+          </div>
+        </div>
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>"One of the major factors that lead me to SEOExperts India was their High Ranking over Google search engines
+              in addition to that the professionalism conveyed through emails & phone was second to none. I was getting quality
+              end results from time to time which was my major concern since the beginning. If I had to rate them I would
+              give them a 7 or 8 easily for the professional communication & quality end results. To sum it up , the response
+              that I have received from the team was very prompt & on –point with good understanding of our goals & objectives.
+              SEOExperts India is a company constituting of serious professionals which will deliver good results & always
+              present you with a clear picture going forward."</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />Naturkraften i Stockholm AB, Vikdalsvägen 50,131 40 Nacka</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="" />+46 736191980</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightGrey">
+            <div class="rightImage">
+              <img class="logoSpace img-responsive" src="{% static 'home/images/la.png' %}" alt="" />
+            </div>
+            <hr>
+            <label>Jonas Lundkvist</label>
+            <span>MD Lundkvist Agentur AB</span>
+          </div>
+        </div>
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>"The staff at Seo Experts India are friendly, efficient and reliable. In the fast changing world of internet
+              marketing, they are always ahead of the game. I can gladly recommend them for search engine optimization services"</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />Cape Town, South Africa</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="" />+27 021 902 0351</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightLightBlue">
+            <div class="rightImage">
+              <img src="{% static 'home/images/capetown.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Beverly Hui</label>
+            <span>Cape Town Splendour</span>
+          </div>
+        </div>
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>"I discovered SEOExperts India over the internet & with all the information I found about them, they seemed like
+              a reliable choice. In fact, after looking at the well-defined and organized campaign, the 1st impression I
+              got was that they could deliver results . Moreover the questions they directed at me were directly related
+              to the SEO campaign and their suggestions were accurate. Being overseas, I didn’t actually see them work but
+              I was able to measure the results I got and You get an impression that they knew what they were doing. Also
+              their pricing structure was very competitive & the timeframe they provided was spot on! Although, the response
+              rate is slow but they are a reliable company and they can be depended upon to deliver the results"</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />Millennium Corporation PO Box 1551, Noosaville 4566, Australia</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="" />+61 423117644</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightLightOrange">
+            <div class="rightImage">
+              <img src="{% static 'home/images/autralia.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Ross Huntley</label>
+            <span>Muscle Science Australia</span>
+          </div>
+        </div>
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>"One of the major factors that lead me to SEOExperts India was their top Ranking in search engines for certain
+              terms related to SEO in addition to that the marketing team’s friendly approach gained my interest further
+              to discuss the project. SEO experts have achieved the anticipated results though they have not disclosed the
+              processes involved. I would like to give a good rating for the skills being showcased while commencing the
+              project. Moreover their professional conduct and quality of services were also up to the mark. And cost was
+              also justified and mapped with the efforts deployed. The response time was average but the feedback was satisfactory.
+              I would certainly like to recommend SEOExperts to other business associates.</p>
+            <p>Lastly, I would like to state simpler reporting format & direct telephonic communication between the technical
+              team & the client would go a long way." </p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />No. 29, Sarathy Nagar, Velachery, Chennai – 600 042</span>
+            <span>
+              <img src="{% static 'home/images/linkedinTest.png' %}" class="img-responsive" alt="">connect with Frank via
+              <a href="https://in.linkedin.com/in/anuradhakrishnan" target="_blank" class="fbLink">linkedin</a>
+            </span>
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue">
+            <div class="rightImage">
+              <img src="{% static 'home/images/annexmed.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Anu Kishan</label>
+            <span>AnnexMed Private Limited</span>
+          </div>
+        </div>
+        <!--  new addition -->
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>"I have started corporation with SEO Experts India since July 2016. At that time I have contacted few companies
+              in India regarding SEO service for the website of my company. It came down to three companies that seemed professional
+              and knew what they were doing. After a lot of negotiations, analyzing and researching, we finally decided to
+              choose the guys from SEO EXPERTS. The main reasons were: 1. Rahul a manager who is in charge of attracting
+              new customers was such a pleasant person to deal with and his professionalism was beyond expectations. He was
+              always in time in his replies and always getting into every detail of the whole SEO process that made all the
+              difference. 2. If you want to choose a company that provides SEO services, step one is to see their own results
+              in Google they try to promote, and the results of SEO EXPERSTS are on TOP, which means they are experienced
+              deeply in what they are selling. 3. The price issue is also important, there are companies that charged huge
+              amount of money but do not even promise the results, the price policy of SEO EXPERTS is unique and turned out
+              to be very convenient and efficient. </p>
+            <p>Since we have started the project day by day I was glad I made a right decision. They fixed main problems of
+              the site (actually very important issues) in a very short time and the results of the key words are improving
+              every month. Special thanks for Rajiv who is trying always hard and doing his best in paying a great attention
+              to my project. I have no hesitation to recommend this company for any business that wants to improve the sales
+              by means of internet. I really like the people who run this company and hope for mutual cooperation in years
+              to come."</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />68 bld/306, Tafakkur str.,Tashkent, UZBEKISTAN</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="">+99890 1769883, +99871 2522339</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue fivesTans">
+            <div class="rightImage">
+              <img src="{% static 'home/images/fivestans.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Rakhmatjon Ibragimov</label>
+            <span>Five Stans Adventure</span>
+          </div>
+        </div>
+
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>“Before joining hands with SEOExperts India; I looked for a lot of other SEO companies across the market but
+              SEOExperts were very quick in getting back to me and answering to all of my questions. They have a very good
+              consulting approach which they apparently proved by their ideas and responses on time. As they are very enthusiastic
+              to get a great outcome for our businesses and have over time helped us in getting our business pages on the
+              first page of Google. I am slowly introducing all of our partner companies to SEO Experts India. If I had to
+              rate them on the basis of professionalism, quality of services & cost; I would certainly state “Great value
+              for money with great expertise & I would certainly recommend any Company to SEOExperts India”</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />Headland Business Park, Suite 13 Level 1, 76 Wises Rd, Maroochydore, QLD 4558</span>
+
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue niceJadine">
+            <div class="rightImage">
+              <img src="{% static 'home/images/nice-jadine.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Nicky Jardine</label>
+            <span>Jardine Ludbrooke Brokers</span>
+          </div>
+        </div>
+
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>“I found SEOExperts while goggling 2years ago. Was impressed by their site. It’s user friendly, informative,
+              technical with professional branding (the logo). Thought it might work for my travel website and got in touch
+              with them for a quote. Promptly, I received the quote and my site’s analysis. They recommended different budget
+              for different key words and the time-frame in ranking my site on 1st page on Google. They are responsive &
+              attentive to what I need. Monthly, I received the ranking report and it’s satisfactory. I know Search Engine
+              Option service is a complicated process and take time though I am not technical.SEOExperts team is really helpful
+              in explaining me, a couple of times, some technical issues that my site is having previously. They fixed it
+              all at their ends and recommended me some tips how to create a mobile-friendly site. Gradually, my site has
+              ranked better and on top of search engines now. </p>
+            <p>I highly appreciate their guidance/assistance. I won’t hesitate to recommend about their service to anyone. They
+              are professional and cost is affordable. Though I am miles away from them, communication swift and smooth.
+              Everything I need is executed professionally by them.” </p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" /> No.8, 4F(A), Ashaegone St Sanchaung Tsp , Yangon Myanmar (Burma) </span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="">+95 95089591</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue signatureHoliday">
+            <div class="rightImage">
+              <img src="{% static 'home/images/signature-holiday.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Tin</label>
+            <span>Signature Holidays</span>
+          </div>
+        </div>
+
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>"Our company have been using SEO Experts India for a couple of years now, they have worked on the SEO for our
+              group websites as well as helping with ongoing development work on our websites.</p>
+
+            <p>We have always found them easy to get on with, knowledgeable in the work they have carried out and very reasonably
+              priced, a combination that will hopefully prolong our business relationship."</p>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt=""> +254 (0)20 2004959, +254 (0) 791 071 920</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue watside">
+            <div class="rightImage">
+              <img src="{% static 'home/images/watside.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Steve Holt</label>
+            <span>Weyside Management Services Ltd </span>
+          </div>
+        </div>
+
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>“I have been associated with SEO Experts India from quite some time now and one of the major reasons which led
+              me into joining hands with them was their Good Ranking observed over Google search engines! In turn which gave
+              me confidence into enquiring further with their representatives.</p>
+
+            <p>I am really content up till this stage & If I had to corroborate my journey with them in simple words! It would
+              basically mean that I couldn't be more happier with the level of service, support and commitment I receive
+              from SEO Experts & I would definitely like to recommend SEO Experts as I find their people highly qualified,
+              motivated and responsive.”</p>
+            <!--span><img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />68 bld/306, Tafakkur str.,Tashkent, UZBEKISTAN</span>
+                        <span><img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="">+99890 1769883, +99871 2522339</span-->
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue dailyMatka">
+            <div class="rightImage">
+              <img src="{% static 'home/images/daily-matka.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Mosin</label>
+            <span>Daily Matka</span>
+          </div>
+        </div>
+
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>“I came across SEO Experts India while searching for an internet marketing firm on Google & their High ranking
+              on Google search engines led me to believe their expertise, skill set was top notch! While their process &
+              work methodologies have boosted my confidence in their abilities so far.</p>
+
+            <p>If I had to rate them on grounds of project execution & professionalism I would definitely give them an 8/10
+              rating! However, to put in simpler terms, SEO Experts India is a company which stands for- Methodical, professional,
+              experienced, good project execution skills!”</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />Njema Court, Rhapta RoadWestlands, Nairobi, Kenya</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="">+254790499730, 0800723340</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue pesaBazaar">
+            <div class="rightImage">
+              <img src="{% static 'home/images/pesabazaar.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Calleb Karegyesa </label>
+            <span>Pesa Bazaar</span>
+          </div>
+        </div>
+
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>"SEO Experts execution was extremely professional. From the initial survey to the weekly reports, their deliverance
+              was flawless. Best of all, they improved our ratings considerably in just a couple of months. We are now proud
+              to be on the first page in google rankings ahead of our competition."</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />Suite 6, 4D/2, Hilltop Arcade, Gizri Boulevard, Phase 4, DHA, Karachi, Pakistan.</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="">+92 21 35810833</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue alliedService">
+            <div class="rightImage">
+              <img src="{% static 'home/images/allied-services.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Shezad.S.Mumtaz</label>
+            <span>ALLIED SERVICES FZ LLE</span>
+          </div>
+        </div>
+
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>“Working with SEO Experts India has been a pleasure so far.. The reason I choose SEO Experts was their attention
+              to detail and courteous, prompt responses to all my queries. The work done by SEO Experts team and their understanding
+              of Internet marketing has really helped me expand our outreach for Las Vegas Event Photography manifold. The
+              quality of their work, coupled with their skill set and professional approach is top notch. Communication is
+              very easy and their responsiveness to my questions, concerns and inquiries is splendid. I’m extremely satisfied
+              with their overall services as they have surpassed my expectations. I would love to expand our business relationship
+              with SEO Experts and would be happy to recommend them to anyone in future as well who is looking to improve
+              their search engine marketing.”</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />6955 North Durango Drive, Suite 1115-111, Las Vegas, NV 89149</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="">702 362 3686, 702 236 0007</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue lasVegas">
+            <div class="rightImage">
+              <img src="{% static 'home/images/las-vegas.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Ben Zimmerman</label>
+            <span>Las Vegas Event Photography</span>
+          </div>
+        </div>
+
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>“I was impressed by the comprehensive list of services that you could provide. Your salesperson was very responsive
+              and went through all of the service options, including both website design and comprehensive SEO (including
+              different service levels at different price points, so that I could choose one that fit my budget). What impresses
+              me the most is the results achieved in the short time since you began working on my site – my site has jumped
+              to first page results!</p>
+            <p>If I had to sum up SEO Experts India in few words, I would definitely state: extremely professional, courteous,
+              superb communication & cost-effective. Furthermore, I would sincerely recommend them to my colleagues and friends,
+              because SEOExperts India is a top-notch service provider, at competitive prices, and I have never had a single
+              problem with them. SEO service is a wonderful investment if you have an internet marketing team like this to
+              guide you at each step of the way.”</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />8965 South Eastern Ave Suite 260, Las Vegas, NV 89123</span>
+            <span>
+              <img src="{% static 'home/images/testPhone.png' %}" class="img-responsive" alt="">702 614 0600</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue atkisonLaw">
+            <div class="rightImage">
+              <img src="{% static 'home/images/atkison-law.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Robert Atkinson, Esq.</label>
+            <span>Atkinson Law</span>
+          </div>
+        </div>
+
+        <div class="defineFloat reviewsContent wow fadeIn">
+          <div class="defineFloat leftTest">
+            <p>“I selected SEO Experts India on the basis of my initial contact via emails. They are always very professional
+              and timely with their responses and their presentations are world class. I couldn't be more happy with the
+              level of service, support and commitment I received from SEO Experts. As a team they offer an extremely satisfying
+              level of service which has helped me in starting to see results very quickly. Their in depth knowledge in Internet
+              Marketing services and dedication they put in on a month to month basis is exceptional. SEO Experts India is
+              the team who does all the thinking for me at the same time giving me the breathing space to focus on my company
+              & business. Their communication is excellent, and they are consistently very reliable and world class efficient
+              marketers. I would definitely recommend their services to others, & I look forward to a continuing relationship
+              for a long time to come.”</p>
+            <span>
+              <img src="{% static 'home/images/testSend.png' %}" class="img-responsive" alt="" />3080 Valmont Road, Suite 220, Boulder, CO, 80301</span>
+          </div>
+          <div class="defineFloat text-center rightTest rightDarkBlue powerPlace">
+            <div class="rightImage">
+              <img src="{% static 'home/images/powerplace.png' %}" class="img-responsive" alt="" />
+            </div>
+            <hr>
+            <label>Theresa Wiess</label>
+            <span>Power Places Tours</span>
+          </div>
+        </div>
+
+
+        <!-- close review -->
       </div>
     </div>
-  </section>
-  <section class="defineFloat" id="powerfulLinks">
+  </div>
+</section>
+<section id="BEF" class="defineFloat">
+  <div class="defineFloat BEF ctaChangeBg">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-xs-12 pfHeading text-center wow fadeIn">
-          <h2>POWERFUL LINK BUILDING FOR DOMINATING SERPS</h2>
-          <span>By securing the right links for your website, we'll boost your Search Engine Rankings.</span>
+        <div class="col-md-12 col-sm-12 col-xs-12 businessInner text-center wow fadeIn">
+          <h2>Have Queries before you Buy?</h2>
+          <p>Contact Us Today & Get all your questions about SEO answered before you get started.</p>
         </div>
-        <div class="col-sm-12 col-xs-12 smoOuter noPad">
-          <div class="col-sm-4 col-xs-6 smoInner text-center wow fadeIn">
-            <div class="smoImage">
-              <img src="{% static 'home/images/lb1.png' %}" class="img-responsive" alt=""> </div>
-            <h3>Link Audits</h3>
-            <p>Our custom link audits include complete analysis of backlink profile, risk identification, and recommendations
-              for improvement.</p>
-          </div>
-          <div class="col-sm-4 col-xs-6 smoInner text-center wow fadeIn">
-            <div class="smoImage">
-              <img src="{% static 'home/images/lb2.png' %}" class="img-responsive" alt=""> </div>
-            <h3>Link Submissions</h3>
-            <p>Get quality backlinks for your website and magnetize the targeted traffic with our manual submission service.
-            </p>
-          </div>
-          <div class="col-sm-4 col-xs-6 smoInner text-center wow fadeIn">
-            <div class="smoImage">
-              <img src="{% static 'home/images/lb3.png' %}" class="img-responsive" alt=""> </div>
-            <h3>Competitive Link Building</h3>
-            <p>We specialize in tailor-made link building solutions fueled by thorough research, proven strategies, and effective
-              KPIs. </p>
-          </div>
-          <div class="col-sm-4 col-xs-6 smoInner text-center borderZero wow fadeIn">
-            <div class="smoImage">
-              <img src="{% static 'home/images/lb4.png' %}" class="img-responsive" alt=""> </div>
-            <h3>Local Search Optimization</h3>
-            <p>The ‘local’ tangent in our link building strategy helps businesses drive sustainable results through local search.
-            </p>
-          </div>
-          <div class="col-sm-4 col-xs-6 smoInner text-center borderZero wow fadeIn">
-            <div class="smoImage">
-              <img src="{% static 'home/images/lb5.png' %}" class="img-responsive" alt=""> </div>
-            <h3>Social Media Promotion</h3>
-            <p>We help you earn quality backlinks and spread brand awareness with a robust social engagement strategy.</p>
-          </div>
-          <div class="col-sm-4 col-xs-6 smoInner text-center borderZero wow fadeIn">
-            <div class="smoImage">
-              <img src="{% static 'home/images/lb6.png' %}" class="img-responsive" alt=""> </div>
-            <h3>Link Outreach</h3>
-            <p>Scale your outreach effectively and maximize your success rates with our unique approach to Link Outreach.</p>
-          </div>
+        <div class="defineFloat text-center testBefImage wow zoomIn">
+          <img src="{% static 'home/images/ranking-divider-pic.png' %}" class="img-responsive" alt="" />
         </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-12 col-xs-12 text-center lbSupercharge wow fadeIn">
-          <h2>Supercharge your SEO Campaigns with our Whitehat Link Building Services.</h2>
-        </div>
-        <div class="col-sm-12 col-xs-12 defineFloat smoProposal text-center wow zoomIn">
-          <div class="defineFloat">
-            <img src="{% static 'home/images/divideImage3.png' %}" class="img-responsive" alt=""> </div>
-        </div>
-        <div class="col-sm-12 col-xs-12 text-center lbsButton wow fadeInUp">
-          <button onclick="location.href='request-for-proposal.php'" type="button" class="btn btn-default commonInnerButton yellowButton hvr-grow cuArrow">Request a Proposal Today
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+        <div class="defineFloat text-center businessButton wow fadeInUp">
+          <button type="button" onclick="location.href='request-for-proposal.php'" class="btn btn-primary yellowButton hvr-grow simpleBounce">GET A FREE PROPOSAL
+            <i class="fa fa-angle-double-right revBtn" aria-hidden="true"></i>
           </button>
-          <span class="defineFloat text-center">
-            <a href="javascript:void(0);" title=" +254 (0)20 2004959">Call us on +254 (0)20 2004959</a>
-          </span>
         </div>
       </div>
     </div>
-  </section>
-  <section class="defineFloat" id="ppcHorAcc">
-    <div class="container">
-      <div class="row wow fadeIn">
-        <div class="col-sm-12 col-xs-12 text-center horAccHeading">
-          <span>THE LINK BUILDING COMPANY</span>
-          <h2>THAT MAKES A DIFFERENCE!</h2>
-        </div>
-      </div>
-      <div class="row wow fadeIn">
-        <div class="col-sm-12 col-xs-12 noPad phaOuter">
-          <div class="accordion ppcHorAcc classyslider-wrapper">
-            <ul class="slider classyslider classyslider-vertical-slider">
-              <li style="z-index: 5; left: 0px;">
-                <img class="tabSlide" src="{% static 'home/images/hidetab-slide.png' %}" style="display:none;" alt="">
-                <div class="accordion-title">
-                  <span>
-                    <img src="{% static 'home/images/accSeven.png' %}" class="img-responsive" alt="">
-                  </span>
-                </div>
-                <div class="accordion-content">
-                  <h2>More than 7 Years of Experience. </h2>
-                  <p>We have over 7 years of experience in formulating effective digital marketing strategies and SEO campaigns
-                    for clients hailing from different industry segments. Throughout this period, we have acquired unmatched
-                    technical expertise and developed proven methodologies for delivering projects of any size and complexity.</p>
-                </div>
-                <div class="accordion-separator"></div>
-              </li>
-              <li style="z-index: 6; left: 500px;">
-                <img class="tabSlide" src="{% static 'home/images/hidetab-slide.png' %}" style="display:none;" alt="">
-                <div class="accordion-title">
-                  <span>
-                    <img src="{% static 'home/images/accGroup.png' %}" class="img-responsive" alt="">
-                  </span>
-                </div>
-                <div class="accordion-content">
-                  <h2>Experienced & Skilled Team </h2>
-                  <p>We are a team of 150+ highly skilled and experienced professionals and are well-versed with all the major
-                    digital marketing trends. Our team comprises of SEO Consultants, Business Analysts, Web Designers and
-                    Digital Marketers who know exactly what will work for you and what not. Together, our experts plan SEO
-                    strategies keeping in mind your specific industry and target audience, and deliver solutions that provide
-                    high ROI.</p>
-                </div>
-                <div class="accordion-separator"></div>
-              </li>
-              <li style="z-index: 7; left: 540px;">
-                <img class="tabSlide" src="{% static 'home/images/hidetab-slide.png' %}" style="display:none;" alt="">
-                <div class="accordion-title">
-                  <span>
-                    <img src="{% static 'home/images/accNintyEight.png' %}" class="img-responsive" alt="">
-                  </span>
-                </div>
-                <div class="accordion-content">
-                  <h2>98% Customer Satisfaction </h2>
-                  <p>Customer satisfaction is the primary mission at SEO Experts India and this is what sets us above our competition.
-                    In the past 7 years, we have delivered over 800 successful projects to 350+ clients from across the globe
-                    and have cultivated a reputation that translates into peace of mind for our customers. We feel proud
-                    when our customers keep coming back to us for our state-of-the-art Internet marketing services and solutions.</p>
-                </div>
-                <div class="accordion-separator"></div>
-              </li>
-              <li style="z-index: 8; left: 580px;">
-                <img class="tabSlide" src="{% static 'home/images/hidetab-slide.png' %}" style="display:none;" alt="">
-                <div class="accordion-title">
-                  <span>
-                    <img src="{% static 'home/images/accShare.png' %}" class="img-responsive" alt="">
-                  </span>
-                </div>
-                <div class="accordion-content">
-                  <h2>Performance Tracking</h2>
-                  <p>Through our monthly performance reports, you can easily monitor the progress of your online marketing campaign
-                    and seek changes if required. Effective performance tracking supplemented by detailed analysis enables
-                    you to identify key challenges and improvements, plan new business strategies, and improve the overall
-                    effectiveness of your business.</p>
-                </div>
-                <div class="accordion-separator"></div>
-              </li>
-              <li style="z-index: 9; left: 620px;">
-                <img class="tabSlide" src="{% static 'home/images/hidetab-slide.png' %}" style="display:none;" alt="">
-                <div class="accordion-title">
-                  <span>
-                    <img src="{% static 'home/images/accFolder.png' %}" class="img-responsive" alt="">
-                  </span>
-                </div>
-                <div class="accordion-content">
-                  <h2>No Hidden or Long Term Contracts. You can cancel anytime!</h2>
-                  <p>We have no locking periods. Our clients have the liberty to upgrade, downgrade or cancel our services at
-                    any point of time. Our flexible engagement model and project cost estimation methodology ensure that
-                    you get consistent pricing and that you only pay for what you intend to use. We make sure that our customers
-                    are never misled!</p>
-                </div>
-                <div class="accordion-separator"></div>
-              </li>
-              <li style="z-index: 10; left: 620px;">
-                <img class="tabSlide" src="{% static 'home/images/hidetab-slide.png' %}" style="display:none;" alt="">
-                <div class="accordion-title">
-                  <span>
-                    <img src="{% static 'home/images/accDollar.png' %}" class="img-responsive" alt="">
-                  </span>
-                </div>
-                <div class="accordion-content">
-                  <h2>Competitive Pricing & Packages </h2>
-                  <p>SEO Experts India offers clear and competitive pricing for results-oriented and profit-driven Internet
-                    marketing services. Through our flexible engagement model and customer-centric approach, we aim at delivering
-                    maximum value to our customers for their investments and ensure that our clients get a high return on
-                    investment when they choose us over other Internet marketing companies.</p>
-                </div>
-                <div class="accordion-separator"></div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row serviceBlock">
-        <div class="col-sm-4 col-xs-12 col-md-4 companyKhm blue text-center">
-
-          <div class="cKhm col-sm-12 col-xs-6 noPad">
-            <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="1">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage">
-                <img src="{% static 'home/images/seven.png' %}" class="img-responsive" alt="" />
-              </div>
-              <h3>More than 7 Years
-                <span>of Experience</span>
-                <i class="fa fa-plus" aria-hidden="true"></i>
-              </h3>
-              <p id="i_1"> We have acquired unmatched technical expertise and developed proven methodologies for delivering projects of
-                any size and complexity. </p>
-            </div>
-          </div>
-          <div class="cKhm col-sm-12 col-xs-6 noPad">
-            <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="2">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage">
-                <img src="{% static 'home/images/nineEight.png' %}" class="img-responsive" alt="" />
-              </div>
-              <h3>98% Customer
-                <span>Satisfaction</span>
-                <i class="fa fa-plus" aria-hidden="true"></i>
-              </h3>
-              <p id="i_2">We have a team of 150+ highly trained and experienced professionals that is well-versed with the SEO Tactics
-                required for high rankings.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12 col-md-4 companyKhm orange text-center">
-          <div class="cKhm col-sm-12 col-xs-6 noPad">
-            <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="3">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage">
-                <img src="{% static 'home/images/team.png' %}" class="img-responsive" alt="" />
-              </div>
-              <h3>Skilled Team
-                <span> We know what Google wants!</span>
-                <i class="fa fa-plus" aria-hidden="true"></i>
-              </h3>
-              <p id="i_3">Through our regular updates and monthly reports, our clients can easily monitor the progress of their campaigns
-                and seek changes if required.</p>
-            </div>
-          </div>
-          <div class="cKhm col-sm-12 col-xs-6 noPad">
-            <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="4">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage">
-                <img src="{% static 'home/images/folder.png' %}" class="img-responsive" alt="" />
-              </div>
-              <h3>No Hidden or Long Term Contracts. You can cancel anytime!
-                <i class="fa fa-plus" aria-hidden="true"></i>
-              </h3>
-              <p id="i_4">We have no locking periods. Our clients have the liberty to upgrade, downgrade or cancel our services at any
-                point of time. </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 col-xs-12 col-md-4 companyKhm silver text-center">
-          <div class="cKhm col-sm-12 col-xs-6 noPad">
-            <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="5">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage">
-                <img src="{% static 'home/images/share.png' %}" class="img-responsive" alt="" />
-              </div>
-              <h3>Performance
-                <span> Tracking</span>
-                <i class="fa fa-plus" aria-hidden="true"></i>
-              </h3>
-              <p id="i_5"> With our customer-centric approach and proven methodologies, we have helped hundreds of businesses optimize
-                their online performance.</p>
-            </div>
-          </div>
-          <div class="cKhm col-sm-12 col-xs-6 noPad">
-            <div class="col-md-12 col-sm-12 col-xs-12 KHM-2" id="6">
-              <div class="col-sm-12 col-xs-12 KHM-2-mobImage">
-                <img src="{% static 'home/images/dollarStar.png' %}" class="img-responsive" alt="" />
-              </div>
-              <h3>Competitive
-                <span>Pricing</span>
-                <i class="fa fa-plus" aria-hidden="true"></i>
-              </h3>
-              <p id="i_6"> We aim at delivering maximum value to our customers from their investments with our flexible engagement model.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row wow fadeInUp">
-        <div class="col-sm-12 col-xs-12 defineFloat pfButton text-center">
-          <button onclick="location.href='get-started.php'" type="button" class="btn btn-default simpleHover">GET A FREE ESTIMATE NOW!</button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="defineFloat outsource text-center">
-    <div class="container demo">
-      <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading bottomStrip" id="headingOne">
-            <h4 class="panel-title">
-              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
-                aria-controls="collapseOne">
-                <i class="fa fa-plus"></i>How Does Your Business Benefit by Outsourcing Link Building To India</a>
-            </h4>
-          </div>
-          <div id="collapseOne" class="panel-collapse collapse">
-            <div class="panel-body blackColor">
-              <div class="col-sm-12 col-xs-12 col-lg-12 col-md-12 whyOutSource-textCoulmn">
-                A great search engine ranking helps improve the website visibility and the brand presence by driving best quality organic
-                traffic towards it. This ulterior goal can be attained with an organized SEO solution that focuses on high-quality
-                one-way link building tactics. However, building backlinks is a critical and time-consuming process which
-                may backfire if not executed properly. Such a backlinking disaster can be avoided by outsourcing the link
-                building process to a company in India, with proven track record in offshore SEO services.
-                <br/> India has emerged the premier outsourcing destination for major European countries like the USA, UK, Canada,
-                Australia and others, because of easy availability of low-cost, highly reciprocal link building packages
-                that help companies abroad establish their online presence. Business firms that outsource their linkbuilding
-                projects to reliable SEO service providers in India enjoy benefits and resources in the form of skilful manpower,
-                modern infrastructure, timely execution, affordable plans, round-the-clock support, and a lot more.
-                <br/> Another factor that contributes to growing demand of offshore SEO agencies is their ability to offer customized
-                SEO reseller programs at cheap prices that help companies retain their clients with consistent services.
-                The top SEO firms in India hire certified linkbuilding specialists only, who have detailed knowledge and
-                expertise to generate high PR value one-way natural links on authority industry leading sites relevant to
-                the brand and keywords. As efficient SEO solution providers, they constantly monitor Google algorithm update,
-                which means your site never incurs penalty for bad links or manipulative actions.
-                <br/> Outsource your linkbuidling campaign to the Indian SEO agency that promises to earn natural links for you
-                every month. Buy the link building plan that strengthens your digital presence by outsmarting competitors.
-                Start a free consultation with the backlinking expert to know how your business can benefit by outsourcing
-                link building to India.
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <!-- panel-group -->
-
-    </div>
-    <!-- container -->
-  </section>
+  </div>
+</section>
 
 
-  {% endblock exports %} {% block form %}{% include 'home/form-section.html' %}{% endblock form %} {% block footer %}{% include
-  'home/footer-section.html' %}{% endblock footer %}
+{% endblock exports %} 
+{% block form %}{% include 'home/form-section.html' %}{% endblock form %} 
+{% block footer %}{% include 'home/footer-section.html' %}{% endblock footer %}

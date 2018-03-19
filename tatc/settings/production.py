@@ -89,6 +89,18 @@ DATABASES = {
     }
 }
 
+# POSTGRES DATABASE SETTINGS
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql', 
+#         'NAME': 'postgres',
+#         'USER': 'postgres',
+#         'PASSWORD': 'MYPASS', 
+#         'HOST': 'localhost', 
+#         'PORT': '5432', 
+#         }
+#     }
+
 # add this
 import dj_database_url
 db_from_env = dj_database_url.config()
