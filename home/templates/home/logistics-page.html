@@ -1,7 +1,9 @@
- {% extends 'home/base.html' %} {% load static %}
+ {% extends 'home/base.html' %} 
+ {% load static %}
 
 <body class="ormPage">
-  {% block nav %}{% include 'home/nav-section.html' %}{% endblock nav %} {% block exports %}
+{% block nav %}{% include 'home/nav-section.html' %}{% endblock nav %} 
+{% block exports %}
 
 
   <section id="sliderInner" class="defineFloat commonHeight">
@@ -10,7 +12,7 @@
       <h2>OUR LOGISTICS SOLUTIONS</h2>
       <p>Strengthen your Online Credibility & Brand Recognition. Take Control of Your Brand Image!</p>
       <div class="defineFloat text-center businessButton">
-        <button type="button" class="btn btn-primary whiteButton hvr-grow popUpFormThree">Grab Your FREE Brand Audit Report</button>
+        <button type="button" class="btn btn-primary whiteButton hvr-grow popUpFormThree">talk to our experts</button>
       </div>
     </div>
   </section>
@@ -105,7 +107,7 @@
             <h2 class="wow fadeIn">Want a clean Online Reputation?</h2>
             <span class="wow fadeIn">Get your FREE Proposal on how we can help you with that!</span>
           </div>
-          <button onclick="location.href='get-started.php'" type="button" class="btn btn-default yellowButton hvr-grow wow fadeInUp">Get started Now!</button>
+          <button href="{% url 'contact' %}" type="button" class="btn btn-default yellowButton hvr-grow wow fadeInUp">Get started Now!</button>
         </div>
       </div>
     </div>
