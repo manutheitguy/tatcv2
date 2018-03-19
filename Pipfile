@@ -7,10 +7,10 @@ name = "pypi"
 
 [packages]
 
-Django = "==1.11.7"
+django = "==1.11.7"
 certifi = "==2018.1.18"
 chardet = "==3.0.4"
-dj-database-url = "==0.4.2"
+dj-database-url = "*"
 django-crispy-forms = "==1.7.0"
 gunicorn = "==19.7.1"
 idna = "==2.6"
@@ -20,6 +20,7 @@ pytz = "==2017.3"
 requests = "==2.18.4"
 "urllib3" = "==1.22"
 whitenoise = "==3.3.1"
+django-heroku = "*"
 
 
 [dev-packages]

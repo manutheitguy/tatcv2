@@ -58,3 +58,9 @@
   margin-top: 2rem;
   padding: 2rem;
 }
+
+/* @media(max-width:576px){
+  .article-txt {
+    margin-bottom: 1rem;
+  }
+} */
