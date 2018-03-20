@@ -21,6 +21,7 @@ requests = "==2.18.4"
 "urllib3" = "==1.22"
 whitenoise = "==3.3.1"
 django-heroku = "*"
+"psycopg2-binary" = "*"
 
 
 [dev-packages]
